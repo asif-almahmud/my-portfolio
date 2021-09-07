@@ -1,3 +1,47 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      margin: 5px 0 0 0; }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+      -webkit-transform: rotate(-45deg) translate(8px, -8px);
+      -moz-transform: rotate(-45deg) translate(8px, -8px);
+      -ms-transform: rotate(-45deg) translate(8px, -8px);
+      -o-transform: rotate(-45deg) translate(8px, -8px);
+      margin: 5px 0 0 0; }
+
 * {
   box-sizing: border-box; }
 

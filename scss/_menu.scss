@@ -1,0 +1,53 @@
+// Menu Button
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut;
+  }
+
+  // Rotate Into X (Cross) From Menu Lines
+  &.close {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    .btn-line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        margin: 5px 0 0 0;
+      }
+
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+        -webkit-transform: rotate(-45deg) translate(8px, -8px);
+        -moz-transform: rotate(-45deg) translate(8px, -8px);
+        -ms-transform: rotate(-45deg) translate(8px, -8px);
+        -o-transform: rotate(-45deg) translate(8px, -8px);
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+}
