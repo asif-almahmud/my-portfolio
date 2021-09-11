@@ -275,7 +275,8 @@ main {
   .about-info .job {
     background: #21334a;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #eece1a 5px solid;
+    line-height: 1.5; }
 
 #main-footer {
   text-align: center;
