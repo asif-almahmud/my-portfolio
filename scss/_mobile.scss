@@ -57,12 +57,27 @@
       height: 120px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bio-image"
+      "bio"
+      "job-1"
+      "job-2"
+      "job-3";
+    grid-template-columns: 1fr;
+  }
 }
 
 // Smartphones ( only below 501 )
 @include mediaSm {
   main#home h1 {
     font-size: 2rem;
+  }
+
+  .portrait {
+    width: 120px;
+    height: 120px;
   }
 }
 
