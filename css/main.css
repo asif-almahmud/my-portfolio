@@ -402,7 +402,10 @@ main {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  main#home h1 {
+  main#home h1,
+  main#about h1,
+  main#contact h1,
+  main#work h1 {
     font-size: 3rem; }
   main {
     align-items: center;
@@ -447,7 +450,10 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
+  main#home h1,
+  main#about h1,
+  main#contact h1,
+  main#work h1 {
     font-size: 2rem; }
   .portrait {
     width: 120px;
@@ -456,7 +462,10 @@ main {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-height: 700px) {
-  main#home h1 {
+  main#home h1,
+  main#about h1,
+  main#contact h1,
+  main#work h1 {
     font-size: 2rem;
     margin-top: 5vh; }
   .menu-branding .portrait {
