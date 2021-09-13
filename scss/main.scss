@@ -148,6 +148,72 @@ main {
   }
 }
 
+// Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px solid #fff;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  width: 50%;
+
+  i {
+    padding-right: 0.5rem;
+  }
+
+  &:hover {
+    background: darken($secondary-color, 15);
+    border-color: $secondary-color;
+    @include easeOut;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: #112;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.btn-light {
+  @extend .btn;
+  background: #ccf;
+  color: #333;
+  float: left;
+  border: 1px solid transparent;
+
+  i {
+    color: #333;
+    @include easeOut;
+  }
+
+  &:hover {
+    i {
+      color: #333;
+      @include easeOut;
+    }
+  }
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;

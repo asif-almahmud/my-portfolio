@@ -1,9 +1,15 @@
 // Widescreens ( only above 1170 )
 @include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // Desktops & Laptops ( 769 ~ 1170 )
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Small Laptops & Tablets ( 501 ~ 768 and below 500 )
@@ -67,6 +73,10 @@
       "job-3";
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Smartphones ( only below 501 )
@@ -79,6 +89,10 @@
     width: 120px;
     height: 120px;
   }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Landscape ( only below 701 height)
@@ -90,8 +104,8 @@
 
   .menu-branding {
     .portrait {
-      width: 180px;
-      height: 180px;
+      width: 120px;
+      height: 120px;
     }
   }
 }
